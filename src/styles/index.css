@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary-blue: #1D4ED8;
+  --color-primary-green: #16A34A;
+  --color-accent-yellow: #D97706;
+  --color-bg-light-blue: #BFDBFE;
+  --color-white: #FFFFFF;
+  --color-gray-dark: #1F2937;
+  --color-gray-light: #6B7280;
+  --color-hover-blue: #2563EB;
+  --color-hover-green: #15803D;
+}
+
+body {
+  background-color: var(--color-bg-light-blue);
+  color: var(--color-gray-dark);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-green);
+  color: var(--color-white);
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-moveRightToLeft {
+  animation: moveRightToLeft 5s linear 1;
+}
